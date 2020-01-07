@@ -10,8 +10,10 @@ public class HourGlassMax {
 
     // Complete the hourglassSum function below.
     static int hourglassSum(int[][] arr) {
+        // Sets max at top left corner of array
         int max = arr[0][0] + arr [1][0] + arr [2][0] + arr[1][1] + arr[0][2] + arr[1][2] + arr[2][2];
         int temp;
+        // Loop runs through each hour glass portion to find max sum, then returns that value.
         for(int i = 0; i < arr.length - 2; i++) {
             for(int j = 0; j < arr.length - 2; j++) {
                 temp = arr[i][j] + arr [i][j+1] + arr [i][j+2] + arr[i+1][j+1] + arr[i+2][j] + arr[i+2][j+1] + arr[i+2][j+2];
