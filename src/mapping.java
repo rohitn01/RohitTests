@@ -4,6 +4,7 @@ import java.io.*;
 
 class mapping{
     public static void main(String []argh){
+        // Declaration of variables
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         Map<String,Integer> phoneBook = new HashMap<String,Integer>();
